@@ -1,29 +1,22 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <title>Lunch Checker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <style>
-      .message { font-size: 1.3em; font-weight: bold; }
-    </style>
+    <meta charset="utf-8">
+    <title></title>
   </head>
-<body>
-   <div class="container">
-     <h1>Lunch Checker</h1>
+  <body ng-app="LunchCheck">
+    <h1>Module1 Assignment: Lunch Check App</h1>
+    <div ng-controller="LunchCheckController">
 
-         <div class="form-group">
-             <input id="lunch-menu" type="text"
-             placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control">
-         </div>
-         <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
-         </div>
-         <div class="form-group message">
-           <!-- Your message can go here. -->
-         </div>
-   </div>
+      <p>WARNNING: Empty item (i.e., "item 1, item2,,item3" or "item 1, item2, ,item3") , will not be counted!</p>
+      <input type="text" size="30" ng-style="inputBroder" ng-model="itemsEaten" autofocus
+        ng-focus="clearPlaceholders();" placeholder="My lunch items separated by (,).">
+      <p ng-style="messageColor"><strong>{{messagePlaceholder}}</strong></p>
+      <button ng-click="checkup();">Check If Too Much</button>
 
-</body>
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
