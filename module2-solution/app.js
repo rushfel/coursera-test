@@ -29,11 +29,14 @@ function ShoppingListCheckOffService () {
 
   // To buy shopping listToBuy
   var toBuyItems = [
-    { name: "cookies1", quantity: 10 },
-    { name: "cookies2", quantity: 7 },
-    { name: "cookies3", quantity: 8 },
-    { name: "cookies4", quantity: 5 },
-    { name: "cookies5", quantity: 4 }
+    { name: "cookies", quantity: 10 },
+    { name: "chips", quantity: 7 },
+    { name: "nutella", quantity: 8 },
+    { name: "bread", quantity: 5 },
+    { name: "milk", quantity: 4 },
+    { name: "eggs", quantity: 5 },
+    { name: "apple", quantity: 1 },
+    { name: "banana", quantity: 2.5 }
   ];
 
   // Bought shopping listToBuy
